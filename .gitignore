@@ -34,7 +34,6 @@ migrate_working_dir/
 /build/
 /coverage/
 .packages
-.metadata
 
 # Symbolication related
 app.*.symbols
