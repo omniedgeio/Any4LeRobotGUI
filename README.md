@@ -32,13 +32,26 @@ The app features a native macOS design with:
 ### 1. Clone & Setup
 
 ```bash
-git clone <repo-url>
+# Clone with submodules
+git clone --recursive <repo-url>
 cd drifting-zodiac
+
+# Or if already cloned, initialize submodule:
+git submodule update --init --recursive
 
 # Setup Python virtual environment
 python3 -m venv backend/.venv
 source backend/.venv/bin/activate
 pip install numpy lerobot huggingface_hub tqdm pillow torch
+```
+
+### 2. Sync Backend with Upstream
+
+```bash
+# Update backend to latest from any4lerobot repo
+git submodule update --remote backend
+git add backend
+git commit -m "Update backend to latest"
 ```
 
 ### 2. Run the App
