@@ -238,21 +238,13 @@ class _MainNavigatorState extends State<MainNavigator> {
                   padding: const EdgeInsets.fromLTRB(20, 24, 20, 20),
                   child: Row(
                     children: [
-                      Container(
-                        width: 36,
-                        height: 36,
-                        decoration: BoxDecoration(
-                          gradient: const LinearGradient(
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
-                            colors: [Color(0xFF007AFF), Color(0xFF5856D6)],
-                          ),
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                        child: const Icon(
-                          CupertinoIcons.cube_box,
-                          color: Colors.white,
-                          size: 20,
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(8),
+                        child: Image.asset(
+                          'assets/icon.png',
+                          width: 36,
+                          height: 36,
+                          fit: BoxFit.cover,
                         ),
                       ),
                       const SizedBox(width: 10),
