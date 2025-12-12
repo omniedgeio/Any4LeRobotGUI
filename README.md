@@ -1,8 +1,10 @@
 # Any4LeRobot GUI
 
-A beautiful, Apple-style desktop application for managing LeRobot datasets on macOS.
+A beautiful, modern desktop application for managing LeRobot datasets on macOS, Linux, and Windows.
 
 ![macOS](https://img.shields.io/badge/macOS-000000?style=flat&logo=apple&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows&logoColor=white)
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat&logo=flutter&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 
@@ -42,9 +44,26 @@ Configure Python path, backend location, and Hugging Face integration.
 
 ## Requirements
 
-- **macOS** (Apple Silicon recommended)
+- **macOS** (Apple Silicon or Intel), **Linux** (Ubuntu 20.04+), or **Windows** (10/11)
 - **Flutter** 3.38+
 - **Python** 3.10+ with virtual environment
+
+### Platform-Specific Dependencies
+
+#### macOS
+- Xcode command line tools: `xcode-select --install`
+- CocoaPods: `gem install cocoapods`
+
+#### Linux
+```bash
+# Ubuntu/Debian
+sudo apt-get update
+sudo apt-get install clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev
+```
+
+#### Windows
+- Visual Studio 2022 with "Desktop development with C++" workload
+- Windows 10 SDK
 
 ## Quick Start
 
@@ -60,7 +79,13 @@ git submodule update --init --recursive
 
 # Setup Python virtual environment
 python3 -m venv backend/.venv
+
+# Activate virtual environment
+# macOS/Linux:
 source backend/.venv/bin/activate
+# Windows (PowerShell):
+# backend\.venv\Scripts\Activate.ps1
+
 pip install numpy lerobot huggingface_hub tqdm pillow torch
 ```
 
@@ -73,11 +98,17 @@ git add backend
 git commit -m "Update backend to latest"
 ```
 
-### 2. Run the App
+### 3. Run the App
 
 ```bash
-# Ensure CocoaPods works (may need: PATH=/opt/homebrew/opt/ruby/bin:$PATH)
+# macOS (may need: PATH=/opt/homebrew/opt/ruby/bin:$PATH)
 flutter run -d macos
+
+# Linux
+flutter run -d linux
+
+# Windows
+flutter run -d windows
 ```
 
 ## Project Structure
