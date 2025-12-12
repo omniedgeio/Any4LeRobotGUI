@@ -53,7 +53,7 @@ Configure Python path, backend location, and Hugging Face integration.
 ```bash
 # Clone with submodules
 git clone --recursive <repo-url>
-cd drifting-zodiac
+cd Any4LeRobotGUI
 
 # Or if already cloned, initialize submodule:
 git submodule update --init --recursive
