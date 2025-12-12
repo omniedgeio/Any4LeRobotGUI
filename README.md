@@ -15,11 +15,21 @@ A beautiful, Apple-style desktop application for managing LeRobot datasets on ma
 
 ## Screenshots
 
-The app features a native macOS design with:
-- Clean sidebar navigation
-- Grouped settings lists
-- Cupertino-style controls
-- Subtle shadows and system colors
+### Data Conversion
+Select from multiple conversion types (OpenX, AgiBot, RoboMIND, LIBERO → LeRobot) with configurable options.
+
+![Data Conversion Screen](images/conversion.png)
+
+### Settings
+Configure Python path, backend location, and Hugging Face integration with grouped macOS-style settings lists.
+
+![Settings Screen](images/settings.png)
+
+**Design Highlights:**
+- 🍎 Native macOS sidebar navigation
+- 📋 Grouped settings lists (iOS-style)
+- 🎨 Apple system colors and SF Pro fonts
+- ✨ Subtle shadows and Cupertino controls
 
 ## Requirements
 
