@@ -21,11 +21,11 @@ jobs:
         with:
           channel: 'stable'
       
-      - name: Install dependencies
-        run: flutter pub get
-          
       - name: Build macOS
-        run: flutter build macos --release
+        run: |
+          flutter config --enable-macos-desktop
+          flutter pub get
+          flutter build macos --release
 
       - name: Compress App
         run: |
