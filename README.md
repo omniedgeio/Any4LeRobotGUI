@@ -16,15 +16,29 @@ A beautiful, Apple-style desktop application for managing LeRobot datasets on ma
 ## Screenshots
 
 ### Dashboard
-The main dashboard shows job statistics, quick actions for common workflows, and real-time job monitoring.
+The main dashboard with job statistics, quick actions, and real-time job monitoring.
 
-![Any4LeRobot Dashboard](images/dashboard.png)
+![Dashboard](images/dashboard.png)
 
-**Features:**
-- 🍎 Native macOS sidebar navigation
-- 📊 Real-time job monitoring with status indicators
-- ⚡ Quick action cards for data conversion, merging, and version conversion
-- ⚙️ Auto-detected bundled backend with Python venv support
+### Data Conversion
+Convert datasets from OpenX, AgiBot, RoboMIND, LIBERO to LeRobot format with configurable options.
+
+![Data Conversion](images/conversion.png)
+
+### Preprocessing
+Merge, filter, and sample datasets with customizable parameters.
+
+![Preprocessing](images/preprocessing.png)
+
+### Version Convert
+Upgrade or downgrade between LeRobot versions (v1.6 ↔ v2.0 ↔ v2.1 ↔ v3.0).
+
+![Version Convert](images/version.png)
+
+### Settings
+Configure Python path, backend location, and Hugging Face integration.
+
+![Settings](images/settings.png)
 
 ## Requirements
 
