@@ -40,7 +40,7 @@ dependencies:
   provider: ^6.1.2
   
   # File & Path handling
-  file_picker: ^8.0.0
+  file_picker: ^10.3.7
   path: ^1.9.0
   
   # Persistence

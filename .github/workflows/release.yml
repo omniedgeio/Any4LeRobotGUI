@@ -23,7 +23,7 @@ jobs:
       
       - name: Build macOS
         run: |
-          flutter config --enable-macos-desktop
+          flutter create --platforms=macos .
           flutter pub get
           flutter build macos --release
 
