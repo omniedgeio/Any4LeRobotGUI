@@ -115,7 +115,7 @@ flutter run -d windows
 
 ```
 .
-├── lib/
+├── lib/                             # Flutter source code (2,829 lines)
 │   ├── main.dart                    # App entry, theme, navigation
 │   ├── services/
 │   │   ├── settings_service.dart    # Persistent settings & backend detection
@@ -126,7 +126,7 @@ flutter run -d windows
 │       ├── preprocessing/           # Merge, filter, sample datasets
 │       ├── version_convert/         # LeRobot version conversion
 │       └── settings/                # App configuration
-├── backend/                         # any4lerobot Python scripts
+├── backend/                         # any4lerobot Python scripts (submodule)
 │   ├── openx2lerobot/
 │   ├── agibot2lerobot/
 │   ├── robomind2lerobot/
@@ -134,7 +134,13 @@ flutter run -d windows
 │   ├── lerobot2rlds/
 │   ├── dataset_merging/
 │   └── ds_version_convert/
-└── macos/                           # macOS platform files
+├── assets/                          # App assets
+│   └── icon.png                     # App icon source
+├── macos/                           # macOS platform files
+├── linux/                           # Linux platform files
+├── windows/                         # Windows platform files
+└── .github/workflows/               # CI/CD pipelines
+    └── release.yml                  # Multi-platform build & release
 ```
 
 ## Configuration
